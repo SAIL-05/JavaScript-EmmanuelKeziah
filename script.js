@@ -314,25 +314,64 @@
 // //5.
 // // Write a program that allows user to enter a number and alerts the lucky number the user entered.
 
-const userNum = parseInt (prompt("Enter a Number: "));
-console.log (`The number you entered is: ${userNum}`);
-console.log (typeof (userNum)); 
+// const userNum = parseInt (prompt("Enter a Number: "));
+// console.log (`The number you entered is: ${userNum}`);
+// console.log (typeof (userNum)); 
 
-if (userNum === 0) {
-    alert ("Zero is not a lucky number");
+// if (userNum === 0) {
+//     alert ("Zero is not a lucky number");
+// }
+// else if  (userNum > 0) {
+//     alert (`Your lucky number is ${userNum}`);
+// }
+// else if (isNaN(userNum)) {
+//     alert ("Please enter a valid number");
+// }
+// else if (userNum < 0) {
+//     alert ("Ofcourse, negative numbers are not lucky numbers");
+// }
+// else if (userNum === "") {
+//     alert ("Please enter a number");
+// }
+// else {
+//     alert ("Please enter a valid number");
+
+// //6.
+// // Prompt sees the input as a string, so we need to convert it to a number using Number() or parseInt().
+// const valueOne = prompt ("Enter a number: ");
+// console.log (typeof (valueOne));
+// alert (typeof (valueOne)); 
+
+// // 6b.
+// // Write a program that displays a prompt asking the user to enter a number and converts the input to a number using Number() or parseInt(). 
+// //Then check if the number is positive, negative or zero. If it is positive, display "The number is positive", if it is negative, display "The number is negative", and if it is zero, display "The number is zero".
+// // The program should also check if the input is a number or not. If it is not a number, display "Please enter a valid number". If the input is empty, display "Please enter a number".
+
+const val1= parseInt (prompt ("Enter a number: "));
+if (val1 > 0) {
+    alert (`${val1} is a positive number`);
+    console.log (typeof (val1)); 
 }
-else if  (userNum > 0) {
-    alert (`Your lucky number is ${userNum}`);
+else if (val1 < 0) {
+    alert (`${val1} is a negative number`);
+    console.log (typeof (val1)); 
 }
-else if (isNaN(userNum)) {
+else if (val1 === 0) {
+    alert (`${val1} is not a lucky number, please try again`);
+    console.log (typeof (val1)); 
+}
+else if (isNaN(val1)) {
+    alert ("Please input a valid number");
+    console.log (typeof (val1)); 
+}
+else if (val1 === "" || val1 === null) { 
+    alert("You have not entered a number, please enter a number");
+    console.log (typeof (val1));
+}
+else {
     alert ("Please enter a valid number");
 }
-else if (userNum < 0) {
-    alert ("Ofcourse, negative numbers are not lucky numbers");
-}
-else if (userNum === "") {
-    alert ("Please enter a number");
-}
+
 
 
 
