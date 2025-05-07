@@ -311,7 +311,28 @@
 // alert (myData + " " + myPhone);
 
 
+// //5.
+// // Write a program that allows user to enter a number and alerts the lucky number the user entered.
 
+const userNum = parseInt (prompt("Enter a Number: "));
+console.log (`The number you entered is: ${userNum}`);
+console.log (typeof (userNum)); 
+
+if (userNum === 0) {
+    alert ("Zero is not a lucky number");
+}
+else if  (userNum > 0) {
+    alert (`Your lucky number is ${userNum}`);
+}
+else if (isNaN(userNum)) {
+    alert ("Please enter a valid number");
+}
+else if (userNum < 0) {
+    alert ("Ofcourse, negative numbers are not lucky numbers");
+}
+else if (userNum === "") {
+    alert ("Please enter a number");
+}
 
 
 
