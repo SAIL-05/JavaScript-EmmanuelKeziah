@@ -1,3 +1,4 @@
+// // // // 28/04/2025- JAVASCRIPT DAY 1  BY MR SAMUEL// // // //
 // // This is a primitive Datatype
 // // String, Number, Boolean, Null, Undefined, Symbol, BigInt
 
@@ -46,6 +47,8 @@
 // console.log (typeof myNumber, typeof myString, typeof myBoolean, typeof myNull, typeof myUndefined);
 // console.log(myNumber, myString, myBoolean, myNull, myUndefined);
 
+
+// // // // 06/05/2025- JAVASCRIPT DAY 2 BY MR SAMUEL// // // //
 
 // //9a.
 // //Non-primitve DataTypes- They are the data types that can hold multiple values and are mutable. They are also called reference data types. They are stored in the heap memory and can be changed or modified. Examples of non-primitive data types include: Object, Array, Function, Date, e.t.c.
@@ -117,7 +120,7 @@
 // console.log(mod); // 0
 
 
-
+// // // //  06/05/2025- JAVASCRIPT DAY 2 BY MR SAMUEL// // // //
 // //12b. Assignment Operators: =, +=, -=, *=, /=, %=, **=, ++=, --=
 // let x=10, y=5, z=20;
 // console.log (x += y); // 15, x = x + y
@@ -221,11 +224,7 @@
 // console.log(voting);
 
 
-
-
-
-
-// // JAVASCRIPT DAY 2 // // // //
+// // // // 06/05/2025- JAVASCRIPT DAY 3 BY MR SAMUEL  // // // //
 // //Conditional Statements- if, else, else if
 
 // //1. If Statements: The if statement will not display anything as long as the condition remains false. i.e It only displays when the condition is true.
@@ -347,37 +346,194 @@
 // //Then check if the number is positive, negative or zero. If it is positive, display "The number is positive", if it is negative, display "The number is negative", and if it is zero, display "The number is zero".
 // // The program should also check if the input is a number or not. If it is not a number, display "Please enter a valid number". If the input is empty, display "Please enter a number".
 
-const val1= parseInt (prompt ("Enter a number: "));
-if (val1 > 0) {
-    alert (`${val1} is a positive number`);
-    console.log (typeof (val1)); 
+// const val1= parseInt (prompt ("Enter a number: "));
+// if (val1 > 0) {
+//     alert (`${val1} is a positive number`);
+//     console.log (typeof (val1)); 
+// }
+// else if (val1 < 0) {
+//     alert (`${val1} is a negative number`);
+//     console.log (typeof (val1)); 
+// }
+// else if (val1 === 0) {
+//     alert (`${val1} is not a lucky number, please try again`);
+//     console.log (typeof (val1)); 
+// }
+// else if (isNaN(val1)) {
+//     alert ("Please input a valid number");
+//     console.log (typeof (val1)); 
+// }
+// else if (val1 === "" || val1 === null) { 
+//     alert("You have not entered a number, please enter a number");
+//     console.log (typeof (val1));
+// }
+// else {
+//     alert ("Please enter a valid number");
+// }
+
+
+// //Write a program that determines the greatest of two numbers.
+// const num1 = parseInt (prompt ("Enter a number:"));
+// const num2 = parseInt (prompt ("Enter another number:"));
+
+// if (num1 > num2) {
+//     console.log (`${num1} is the greater number`);
+//     alert (`${num1} is the greater number`);
+// }
+// else if (num1 < num2) {
+//     console.log (`${num2} is the greater number`);
+//     alert (`${num2} is the greater number`);
+// }
+// else if (num1 === num2) {
+//     console.log (`${num1} is really equal to ${num2}`);
+//     alert (`${num1} is really equal to ${num2}`);
+// }
+// else if (isNaN (num1) || isNaN(num2)) {
+//     console.log ("Please enter a valid number");
+//     alert ("Please enter a valid number");
+// }
+// else {
+//     console.log ("Please enter a valid number");
+// }
+
+
+// //Write a program that transforms a numerical grade to a letter grade (e.g grade 0-39 should display "F", grade 40-44 should display "E", grade 45-49 should display "D", grade 50-59 should display "C", grade 60-69 should display "B", grade 70-100 should display "A")
+const grade = (parseInt(prompt("Enter your grade: ")));
+if ((grade >= 70) && (grade <= 100)) {
+    console.log ("Way to go champ, you got an A");
 }
-else if (val1 < 0) {
-    alert (`${val1} is a negative number`);
-    console.log (typeof (val1)); 
+else if ((grade >= 60) && (grade <= 69))  {
+    console.log ("Yay, you got a B");
 }
-else if (val1 === 0) {
-    alert (`${val1} is not a lucky number, please try again`);
-    console.log (typeof (val1)); 
+else if ((grade >= 50) && (grade <= 59)) {
+    console.log ("Not bad, you got a C");
 }
-else if (isNaN(val1)) {
-    alert ("Please input a valid number");
-    console.log (typeof (val1)); 
+else if ((grade >= 45) && (grade <= 49)) {
+    console.log ("You got a D, try harder next time");
 }
-else if (val1 === "" || val1 === null) { 
-    alert("You have not entered a number, please enter a number");
-    console.log (typeof (val1));
+else if ((grade >= 40) && (grade <= 44)) {
+    console.log ("You got an E, try harder next time");
 }
-else {
-    alert ("Please enter a valid number");
+else if ((grade >= 0) && (grade <= 39)) {
+    console.log ("You just ey waste your parents money, you got an F");
+}
+else if (isNaN(grade)) {
+    console.log ("Please enter a valid number");
 }
 
 
+// // // 08/05/2025- JAVASCRIPT DAY 4  BY MR IFE & MR JOSHUA// // //
+// Properties and Methods
+// Non-primitive/Object Datatypes: They are so-called because they always return an object.
+// Examples include Arrays, Functions, and Objects.
+
+// ARRAYS- They can store multiple values in one variable. There are different ways to store values in an array.
+// // 1. Using the Array constructor: const myArray = new Array(1, 2, 3, 4, 5); // the new keyword is used to create a new instance of the Array object. The Array constructor takes any number of arguments, which are the elements of the array. The elements can be of any data type, including other arrays and objects.
+// // 2. Using the square brackets e.g:
+// const myArray = [1, 2, 3, 4, 5]; // this is the most common way to create an array.
+// console.log (myArray.length); // 5, this will display the number of elements in the array. The length property returns the number of elements in the array. It cannot be changed or modified, the length property is automatically updated when elements are added or removed from the array.
+
+// To pick the objects in the array, we use the index. Index starts from 0.
+// console.log (myArray[3]); // 4.
+// When the index of an array is unknown, how do we access the last elements in the array?
+// // We can use the [length -1] property. i.e console.log (myArray[myArray.length - 1]) will return the last element in the array.
+// console.log (myArray[myArray.length - 1]); // 5, this will display the last element in the array.
 
 
+//METHODS
+// Methods helps us to manipulate, add, remove, and access elements in the array. 
+// They are called methods because they are associated with the array object. Methods are called using the dot notation, e.g: myArray.push(6), where push is the method and 6 is the argument passed to the method.
+
+// 1. push(): adds one or more elements to the end of an array and returns the new length of the array. It can take any number of arguments, which are the elements to be added to the array. The elements can be of any data type, including other arrays and objects.
+// 2. pop(): removes the last element from an array and returns that element. This method changes the length of the array. It does not take any arguments. It is used to remove the last element from the array. If the array is empty, it returns undefined.
+// e.g 
+// console.log(myArray.push(6));
+// console.log(myArray);
+// console.log(myArray.pop());
+// console.log(myArray);
+
+// myArray.pop();
+// to remove the last elent of an array
+// myArray.pop();
+// remove the first element of an array
+// myArray.shift();
+// to add an element to the end of an array
+// myArray.push(6);
+// to add an element to the beginning of an array
+// myArray.unshift(0);
+// to find the length of an array
+// myArray.length;
+// to find the index of an element in an array
+// myArray.indexOf(3);
+// to find the last index of an element in an array
+// myArray.lastIndexOf(3);
+// to know if an element is in an array
+// myArray.includes(3);
+// to find character in a string, use charAt()
+// to find the last character in a string, use charAt(string.length - 1);
+// to find the first character in a string, use charAt(0);
+// .join();
+// .join("...");
+// .slice(); removes the items in the array and returns a new array. it takes two arguments, the start index and the end index. The start index is inclusive and the end index is exclusive. It does not change the original array. It returns a new array with the elements from the start index to the end index. The original array remains unchanged.
+// console.log(myArray.slice(1, 3)); // [2, 3], this will display the elements from index 1 to index 2. The end index is exclusive, so it does not include the element at index 3. stop before you get to index 3.
+// .splice (); to delete items, update the values and add new values to the array. It takes three arguments, the start index, the delete  count and the new values to be added. It changes the original array and returns the deleted elements as a new array. The start index is inclusive and the delete count is the number of elements to be deleted from the start index. The new values are the elements to be added to the array. The new values can be of any data type, including other arrays and objects.
+
+// console.log (myArray.splice(2, 0, 'ope')); // start at 2, delete 0 elements and add 'ope' to the array. This will not change the original array because the delete count is 0. It will only add 'ope' to the array at index 2. The original array remains unchanged.
+// console.log (myArray.splice (2, 2)); //starts at index 2, deletes 2 elements and return the remaining values
 
 
+// push,pop- remove or add from the end of the array
+//shift, unshift- remove or add from the front of the array
 
+// 3. shift(): removes the first element from an array and returns that element. This method changes the length of the array. It does not take any arguments. It is used to remove the first element from the array. If the array is empty, it returns undefined.
+// console.log(myArray.shift());
+
+//4. unshift(): adds one or more elements to the beginning of an array and returns the new length of the array. It can take any number of arguments, which are the elements to be added to the array. The elements can be of any data type, including other arrays and objects.
+// console.log(myArray.unshift(0));
+
+
+// What if the index of the element is unknown?
+// .indexOf(): returns the first index at which a given element can be found in the array, or -1 if it is not present. It takes one argument, which is the element to be searched for in the array. The search is case-sensitive and starts from index 0. If the element is not found, it returns -1. can be used to get something in the middle of the array.
+// console.log(myArray.indexOf(3)); // 2, this will display the index of the first occurrence of the element 3 in the array. If the element is not found, it returns -1
+
+
+//OBJECTS- {}, uses a key-value pair to store data.
+
+// let student = {
+//     name: "John Doe",
+//     score: 90,
+//     age: 25,
+// };
+// console.log (student)
+// console.log (student.name); // John Doe ---dot notation
+// console.log (student["name"]); // John Doe ---bracket notation
+
+
+// // Object.keys(), Object.values(), Object.entries()
+// console.log (Object.keys(student)); // ["name", "score", "age"]
+// console.log (Object.values(student)); // ["John Doe", 90, 25]
+// //Object.seals() - the values of the object cannot be changed, but the properties can be added or removed. It prevents new properties from being added to the object, but allows existing properties to be changed. 
+// // console.log (Object.seal(student)); // {name: "John Doe", score: 90, age: 25}
+// console.log (student.score = 100); // 100, this will change the value of the score property to 100. But if the object is sealed, the properties cannot be added or removed. The values can be changed.
+// console.log (student.age = 30); // 30, this will change the value of the age property to 30. But if the object is sealed, the properties cannot be added or removed. The values can be changed.
+
+// let scoreBoard = [1, 2, 3, 4, 5, {name: "John Doe", score: 90}];
+// console.log (scoreBoard[5].name); // John Doe, this will display the name property of the object at index 5 in the array. The object is stored at index 5 in the array. The object can be accessed using the index of the array and the property name of the object.
+
+//Create an array, put an object in it, and access the object "ife " in the array using the index of the array and the property name of the object.
+
+let myArray =[1,2,3,4, {name: 'ife'}];
+console.log (myArray[4].name); // 'ife'
+
+let newScore = [3, 4, 5, 6, 7, {name: 'ife', score : 90, age: 25}];
+// console.log (newScore[5].name); 
+// console.log (newScore[5].score); // 90
+console.log (newScore[5]['age']);
+console.log (newScore[5]['score']);
+
+
+let newName = null;
+console.log (typeof newName);
 
 
 
