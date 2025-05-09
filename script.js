@@ -398,28 +398,119 @@
 
 
 // //Write a program that transforms a numerical grade to a letter grade (e.g grade 0-39 should display "F", grade 40-44 should display "E", grade 45-49 should display "D", grade 50-59 should display "C", grade 60-69 should display "B", grade 70-100 should display "A")
-const grade = (parseInt(prompt("Enter your grade: ")));
-if ((grade >= 70) && (grade <= 100)) {
-    console.log ("Way to go champ, you got an A");
+// const grade = (parseInt(prompt("Enter your grade: ")));
+// if ((grade >= 70) && (grade <= 100)) {
+//     console.log ("Way to go champ, you got an A");
+// }
+// else if ((grade >= 60) && (grade <= 69))  {
+//     console.log ("Yay, you got a B");
+// }
+// else if ((grade >= 50) && (grade <= 59)) {
+//     console.log ("Not bad, you got a C");
+// }
+// else if ((grade >= 45) && (grade <= 49)) {
+//     console.log ("You got a D, try harder next time");
+// }
+// else if ((grade >= 40) && (grade <= 44)) {
+//     console.log ("You got an E, try harder next time");
+// }
+// else if ((grade >= 0) && (grade <= 39)) {
+//     console.log ("You just ey waste your parents money, you got an F");
+// }
+// else if (isNaN(grade)) {
+//     console.log ("Please enter a valid number");
+// }
+// else {
+//     console.log ("Enter a valid input")
+// }
+
+
+
+// Write a program that calculates the Body Mass Index (BMI) and categorizes it. The formula for BMI is: weight / (height * height).
+// Underweight (below 18.5), Healthy Weight (18.5 to 24.9), Overweight (25 to 29.9), and Obese (30 or greater)
+// const BMI = parseFloat(prompt("Enter your weight (in kg): ")) / (parseFloat(prompt("Enter your height in meters: ")) ** 2);
+
+// if (BMI <= 18.5) {
+//     alert ("You are underweight");
+// }
+// else if ((BMI >= 18.5) && (BMI <= 24.9)) {
+//     alert(`Bravo, your BMI is: ${BMI}, You have a healthy weight`);
+// }
+// else if ((BMI >= 25) && (BMI <= 29.9)) {
+//     alert (`Your BMI is: ${BMI}, Hit the Gym, you're overweight`);
+// }
+// else if (BMI >= 30) {
+//     alert (`Your BMI is : ${BMI}. You're obese`);
+// }
+// else {
+//     alert (`${BMI} is an invalid entry, enter a valid number`);
+//     console.log (`${BMI} is an invalid entry, enter a valid number`);
+// }
+
+// Write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
+
+const ticketPricing = parseInt (prompt (`Enter your Age: `));
+if (isNaN(ticketPricing) || (ticketPricing < 1)) {
+    alert (`Enter a valid age, Ticket pricing is from age 1 and above`);
 }
-else if ((grade >= 60) && (grade <= 69))  {
-    console.log ("Yay, you got a B");
+else if ((ticketPricing < 12)) {
+    console.log (`Ticket price is $5`);
+    alert (`Ticket price is $5`);
 }
-else if ((grade >= 50) && (grade <= 59)) {
-    console.log ("Not bad, you got a C");
+else if (ticketPricing < 18) {
+    console.log (`Ticket price is $10`);
+    alert (`Ticket price is $10`);
 }
-else if ((grade >= 45) && (grade <= 49)) {
-    console.log ("You got a D, try harder next time");
+else if(ticketPricing < 60) {
+    console.log (`Ticket Price is $20`);
+    alert (`Ticket Price is $20`);
 }
-else if ((grade >= 40) && (grade <= 44)) {
-    console.log ("You got an E, try harder next time");
+else if (ticketPricing === 60) {
+    console.log (`Ticket Price is $15`);
+    alert (`Ticket Price is $15`);
 }
-else if ((grade >= 0) && (grade <= 39)) {
-    console.log ("You just ey waste your parents money, you got an F");
+else if (ticketPricing >= 100) {
+    console.log (`Ticket Price is $20 after discount`);
+    alert (`You too dey lie. Enter a realistic age`);
 }
-else if (isNaN(grade)) {
-    console.log ("Please enter a valid number");
+else {
+    console.log (`Enter a valid age`);
+    alert (`Enter a valid age`);
 }
+
+
+
+
+
+
+
+// Write a program that determines if a year is a leap year.
+
+// Write a program that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
+
+// Write a program that greets the user based on the time of day. Display good morning, good afternnon or good evening based on the time of day when you run the code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // // // 08/05/2025- JAVASCRIPT DAY 4  BY MR IFE & MR JOSHUA// // //
@@ -522,18 +613,18 @@ else if (isNaN(grade)) {
 
 //Create an array, put an object in it, and access the object "ife " in the array using the index of the array and the property name of the object.
 
-let myArray =[1,2,3,4, {name: 'ife'}];
-console.log (myArray[4].name); // 'ife'
+// let myArray =[1,2,3,4, {name: 'ife'}];
+// console.log (myArray[4].name); // 'ife'
 
-let newScore = [3, 4, 5, 6, 7, {name: 'ife', score : 90, age: 25}];
-// console.log (newScore[5].name); 
-// console.log (newScore[5].score); // 90
-console.log (newScore[5]['age']);
-console.log (newScore[5]['score']);
+// let newScore = [3, 4, 5, 6, 7, {name: 'ife', score : 90, age: 25}];
+// // console.log (newScore[5].name); 
+// // console.log (newScore[5].score); // 90
+// console.log (newScore[5]['age']);
+// console.log (newScore[5]['score']);
 
 
-let newName = null;
-console.log (typeof newName);
+// let newName = null;
+// console.log (typeof newName);
 
 
 
