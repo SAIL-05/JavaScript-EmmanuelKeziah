@@ -631,7 +631,33 @@
 //     alert (`${year} is not a leap year.`);
 // }
 
-// //8. Write a program that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
+// //8. Write a program that calculates a discount based on the purchase amount.Prices equal or over $100 have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0.
+
+const customerName = prompt ("Welcome to our MagicSales store. The only store where we offer great discounts for items bought over $50. \n\n Please enter your name: ");
+if (!customerName || ( !isNaN(customerName [0])) || (customerName.length < 3) || (!/^[A-Za-z]+$/.test(customerName))) {
+    alert ("Invalid Name. Please enter a valid customer name with at least 3 characters");
+}
+else if (customerName.length >= 10) {
+    alert ("Name is too long. Please enter a name with less than 10 characters.");
+}
+else {
+    const purchaseAmount = parseFloat (prompt (`Hello ${customerName}, please enter the amount of your purchase: `));
+}
+if ((isNaN(purchaseAmount)) || (purchaseAmount <= 0)) {
+    alert ("Invalid Input. Please enter a number greater than 0");
+}
+else if (purchaseAmount >= 100) {
+    alert (`Thanks for shopping with us ${customerName}, you have a discount of 20% on your purchase of $${purchaseAmount}. \n\n Your total amount after discount is: $${(purchaseAmount - (purchaseAmount * 0.2)).toFixed(2)}`); //to find the final amount, it deducts the discount from the purchase amount and keeps it at 2.d.p.
+}
+else if (purchaseAmount >= 50) {
+    alert (`Thanks for shopping with us ${customerName}, you have a discount of 10% on your purchase of $${purchaseAmount}. \n\n Your total amount after discount is: $${(purchaseAmount - (purchaseAmount * 0.1)).toFixed(2)}`);
+}
+else if (purchaseAmount < 50) {
+    alert (`Thanks for shopping with us ${customerName}, you have no discount. \n\n Your total amount is: $${purchaseAmount.toFixed(2)}`);
+}
+else {
+    alert ("Invalid Input. Please enter a number greater than 0");
+}
 
 // //9. Write a program that greets the user based on the time of day. Display good morning, good afternnon or good evening based on the time of day when you run the code.
 
