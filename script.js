@@ -432,6 +432,275 @@
 
 
 
+// EXERCISES
+// //1.
+// // Write a program that allows user to enter a number and alerts the lucky number the user entered.
+
+// const userNum = parseInt (prompt("Enter a Number: "));
+// console.log (`The number you entered is: ${userNum}`);
+// console.log (typeof (userNum)); 
+
+// if (userNum === 0) {
+//     alert ("Zero is not a lucky number");
+// }
+// else if  (userNum > 0) {
+//     alert (`Your lucky number is ${userNum}`);
+// }
+// else if (isNaN(userNum)) {
+//     alert ("Please enter a valid number");
+// }
+// else if (userNum < 0) {
+//     alert ("Ofcourse, negative numbers are not lucky numbers");
+// }
+// else if (userNum === "") {
+//     alert ("Please enter a number");
+// }
+// else {
+//     alert ("Please enter a valid number");
+
+// //2.
+// // Prompt sees the input as a string, so we need to convert it to a number using Number() or parseInt().
+// const valueOne = prompt ("Enter a number: ");
+// console.log (typeof (valueOne));
+// alert (typeof (valueOne)); 
+
+// // 2b.
+// // Write a program that displays a prompt asking the user to enter a number and converts the input to a number using Number() or parseInt(). 
+// //Then check if the number is positive, negative or zero. If it is positive, display "The number is positive", if it is negative, display "The number is negative", and if it is zero, display "The number is zero".
+// // The program should also check if the input is a number or not. If it is not a number, display "Please enter a valid number". If the input is empty, display "Please enter a number".
+
+// const val1= parseInt (prompt ("Enter a number: "));
+// if (val1 > 0) {
+//     alert (`${val1} is a positive number`);
+//     console.log (typeof (val1)); 
+// }
+// else if (val1 < 0) {
+//     alert (`${val1} is a negative number`);
+//     console.log (typeof (val1)); 
+// }
+// else if (val1 === 0) {
+//     alert (`${val1} is not a lucky number, please try again`);
+//     console.log (typeof (val1)); 
+// }
+// else if (isNaN(val1)) {
+//     alert ("Please input a valid number");
+//     console.log (typeof (val1)); 
+// }
+// else if (val1 === "" || val1 === null) { 
+//     alert("You have not entered a number, please enter a number");
+//     console.log (typeof (val1));
+// }
+// else {
+//     alert ("Please enter a valid number");
+// }
+
+
+ 
+// //3. Write a program that determines the greatest of two numbers.
+// const num1 = parseInt (prompt ("Enter a number:"));
+// const num2 = parseInt (prompt ("Enter another number:"));
+
+// if (num1 > num2) {
+//     console.log (`${num1} is the greater number`);
+//     alert (`${num1} is the greater number`);
+// }
+// else if (num1 < num2) {
+//     console.log (`${num2} is the greater number`);
+//     alert (`${num2} is the greater number`);
+// }
+// else if (num1 === num2) {
+//     console.log (`${num1} is really equal to ${num2}`);
+//     alert (`${num1} is really equal to ${num2}`);
+// }
+// else if (isNaN (num1) || isNaN(num2)) {
+//     console.log ("Please enter a valid number");
+//     alert ("Please enter a valid number");
+// }
+// else {
+//     console.log ("Please enter a valid number");
+// }
+
+
+// //4. Write a program that transforms a numerical grade to a letter grade (e.g grade 0-39 should display "F", grade 40-44 should display "E", grade 45-49 should display "D", grade 50-59 should display "C", grade 60-69 should display "B", grade 70-100 should display "A")
+// const grade = (parseInt(prompt("Enter your grade: ")));
+// if ((grade >= 70) && (grade <= 100)) {
+//     console.log ("Way to go champ, you got an A");
+// }
+// else if ((grade >= 60) && (grade <= 69))  {
+//     console.log ("Yay, you got a B");
+// }
+// else if ((grade >= 50) && (grade <= 59)) {
+//     console.log ("Not bad, you got a C");
+// }
+// else if ((grade >= 45) && (grade <= 49)) {
+//     console.log ("You got a D, try harder next time");
+// }
+// else if ((grade >= 40) && (grade <= 44)) {
+//     console.log ("You got an E, try harder next time");
+// }
+// else if ((grade >= 0) && (grade <= 39)) {
+//     console.log ("You just ey waste your parents money, you got an F");
+// }
+// else if (isNaN(grade)) {
+//     console.log ("Please enter a valid number");
+// }
+// else {
+//     console.log ("Enter a valid input")
+// }
+
+
+
+// //5. Write a program that calculates the Body Mass Index (BMI) and categorizes it. The formula for BMI is: weight / (height * height).
+// Underweight (below 18.5), Healthy Weight (18.5 to 24.9), Overweight (25 to 29.9), and Obese (30 or greater)
+
+// const BMI = parseFloat(prompt("Enter your weight (in kg): ")) / (parseFloat(prompt("Enter your height in meters: ")) ** 2);
+// const roundedBMI = BMI.toFixed(1); //.toFixed(1) rounds the BMI to one decimal place 
+// if (BMI < 18.5) {
+//     alert("You are underweight");
+// }
+// else if ((BMI >= 18.5) && (BMI <= 24.9)) {
+//     alert(`Bravo, your BMI is: ${roundedBMI}, You have a healthy/normal weight`);
+// }
+// else if ((BMI >= 25) && (BMI <= 29.9)) {
+//     alert(`Your BMI is: ${roundedBMI}, Hit the Gym, you're overweight`);
+// }
+// else if (BMI >= 30) {
+//     alert(`Your BMI is: ${roundedBMI}. You're obese`);
+// }
+// else {
+//     alert("This is an invalid entry, try again");
+// }
+
+
+// //6. Write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
+
+// const ticketPricing = parseInt (prompt (`Enter your Age: `));
+// if (isNaN(ticketPricing) || (ticketPricing < 1)) {
+//     alert (`Enter a valid age, Ticket pricing is from age 1 and above`);
+// }
+// else if ((ticketPricing < 12)) {
+//     console.log (`Ticket price is $5`);
+//     alert (`Ticket price is $5`);
+// }
+// else if (ticketPricing < 18) {
+//     console.log (`Ticket price is $10`);
+//     alert (`Ticket price is $10`);
+// }
+// else if(ticketPricing < 60) {
+//     console.log (`Ticket Price is $20`);
+//     alert (`Ticket Price is $20`);
+// }
+// else if (ticketPricing === 60) {
+//     console.log (`Ticket Price is $15`);
+//     alert (`Ticket Price is $15`);
+// }
+// else if (ticketPricing < 100) {
+//     alert (`Sorry. This discount is for people between ages 1-60`)
+// }
+// else if (ticketPricing >= 100) {
+//     console.log (`You too dey lie. Enter a realistic age`);
+//     alert (`You too dey lie. Enter a realistic age`);
+// }
+// else {
+//     console.log (`Enter a valid age`);
+//     alert (`Enter a valid age`);
+// }
+
+
+// //7. Write a program that determines if a year is a leap year.
+// // //Solution: A year is a leap year if it is divisible by 4, but not divisible by 100, unless it is also divisible by 400.
+
+// const year = parseInt (prompt ("Enter a year: "));
+// if (isNaN(year) || (year <= 0)) {
+//     alert ("Invalid Input. Please enter a positive whole number (e.g 1999, 2000, 2024)");
+// }   
+// else if (year <= 999) {
+//     alert ("Are you trying to go back in time? Please enter a more recent year (e.g 1999, 2000)");
+// }
+// else if (year > 2025) {
+//     if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+//         alert (`${year} is a leap year, but you will need a time machine that goes into the future`);
+//     } else  {
+//         alert (`${year} is not a leap year, and you will still need a time machine to visit it`);
+//     }
+// } 
+// else if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+//     alert (`${year} is a leap year`);
+// }
+// else {
+//     alert (`${year} is not a leap year.`);
+// }
+
+// //8. Write a program that calculates a discount based on the purchase amount.Prices equal or over $100 have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0.
+
+// const customerName = prompt ("Welcome to our MagicSales store. The only store where we offer great discounts for items bought over $50. \n\n Please enter your name: ");
+// if (!customerName || ( !isNaN(customerName [0])) || (customerName.length < 3) || (!/^[A-Za-z]+$/.test(customerName))) {
+//     alert ("Invalid Name. Please enter a valid customer name with at least 3 characters");
+// }
+// else if (customerName.length >= 10) {
+//     alert ("Name is too long. Please enter a name with less than 10 characters.");
+// }
+// else {
+//     const purchaseAmount = parseFloat (prompt (`Hello ${customerName}, please enter the amount of your purchase: `));
+// }
+// if ((isNaN(purchaseAmount)) || (purchaseAmount <= 0)) {
+//     alert ("Invalid Input. Please enter a number greater than 0");
+// }
+// else if (purchaseAmount >= 100) {
+//     alert (`Thanks for shopping with us ${customerName}, you have a discount of 20% on your purchase of $${purchaseAmount}. \n\n Your total amount after discount is: $${(purchaseAmount - (purchaseAmount * 0.2)).toFixed(2)}`); //to find the final amount, it deducts the discount from the purchase amount and keeps it at 2.d.p.
+// }
+// else if (purchaseAmount >= 50) {
+//     alert (`Thanks for shopping with us ${customerName}, you have a discount of 10% on your purchase of $${purchaseAmount}. \n\n Your total amount after discount is: $${(purchaseAmount - (purchaseAmount * 0.1)).toFixed(2)}`);
+// }
+// else if (purchaseAmount < 50) {
+//     alert (`Thanks for shopping with us ${customerName}, you have no discount. \n\n Your total amount is: $${purchaseAmount.toFixed(2)}`);
+// }
+// else {
+//     alert ("Invalid Input. Please enter a number greater than 0");
+// }
+
+// //9. Write a program that greets the user based on the time of day. Display good morning, good afternoon or good evening based on the time of day when you run the code.
+
+// const now = new Date();
+// const hours = now.getHours();
+// const minutes = now.getMinutes().toString().padStart(2, '0');
+// const period = (hours < 12) ? "AM" : "PM";
+// const time = `${hours}:${minutes} ${period}`;
+
+
+// const greeting = (time < 12) ? `Welcome user, the time is ${time} and we say Good Morning` : (time < 18) ? `Welcome user, the time is ${time} and we say Good Afternoon` : `Welcome user, the time is ${time} and we say Good Evening`;
+// alert (greeting);
+
+// const checkTime = prompt ("Press OK to input a customized time (in 24hrs format): ");
+// if (checkTime < 12) {
+//     alert (`Good Morning, the time is ${checkTime} AM`);
+// }
+// else if ((isNaN(checkTime)) || (checkTime < 0) || (checkTime > 24) || (checkTime.trim() === "")) {
+//     alert ("Invalid Input. Please enter a valid time between 0 and 24");
+// }
+// else if (checkTime < 18) {
+//     alert (`Good Afternoon, the time is ${checkTime} PM`);
+// }
+// else if (checkTime >= 18) {
+//     alert (`Good Evening, the time is ${checkTime} PM`);
+// }
+// else {
+//     alert ("Invalid Input. Please enter a valid time between 0 and 24");
+// }
+
+// //10. Write a program that checks if a number is even or odd.
+const checkNum = parseInt (prompt ("Enter a number: "));
+if (isNaN(checkNum) || (checkNum < 0)) {
+    alert ("Invalid Input. Please enter a positive number");
+}
+else{
+    const inputNum = (checkNum % 2 === 0) 
+    ? `${checkNum} is definitely an even number` 
+    : `${checkNum} is definitely an odd number`; 
+    alert(inputNum);
+}
+
+
 
 
 
