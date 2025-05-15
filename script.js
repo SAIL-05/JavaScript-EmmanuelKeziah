@@ -426,11 +426,287 @@
 // console.log (typeof newName);
 
 
+// // 13/05/2025- JAVASCRIPT DAY 5 BY MR SAMUEL
+// // STRING METHODS, NUMBER METHODS, MATH OBJECTS, DATE OBJECTS,FUNCTIONS, LOOPS
+
+// // STRING METHODS
+// //Every method is denoted with circle brackets"()". The brackets are called parenthesis.
+
+// let myString = "Hello World";
+
+// console.log (myString); // Hello World
+
+// console.log (myString.toUpperCase()); // HELLO WORLD, this will convert the string to uppercase.
+
+// console.log (myString.toLowerCase()); // hello world, this will convert the string to lowercase. Useful for case-sensitive comparisons, to make it lightweight on the server or database, email inputs are also converted to lowercase before storing them in the database.
+
+// console.log (myString.charAt(0)); // H. It returns the character at a specific index. Useful for filling the first letter of a name in a form or contact field e.g gmail will use the first letter of your name to create an account if you don't provide a profile picture.
+
+// console.log (myString.indexOf(World))// 6. It finds the position or first occurence of a character in a string.
+// console.log (myString.includes("World")); // true. Checks if a part of the string is present in the set of strings. Useful for making search engines, search bars, and search fields. It is case-sensitive and returns true if the string is found and false if it is not found.
+
+// console.log (myString.slice(0, 5)); // Hello.  It cuts out parts of the string and returns a new string. It takes two arguments, the start index and the end index. The start index is inclusive and the end index is exclusive. It does not change the original string. It returns a new string with the elements from the start index to the end index. The original string remains unchanged.
+
+// console.log (myString.trim()); // Hello World. Removes white spaces before and after the string or text. Useful in forms, search fields, text fields, and input fields.
+
+// console.log (myString.replace("World", "Samuel")); // Hello Samuel. It replaces a part of the string with another string. It takes two arguments, the string to be replaced and the new string.
+// //You can also replace characters or letters in a string using the replace() method. It takes two arguments, the character to be replaced and the new character. The replace() method replaces only the first occurrence of the character in the string. If you want to replace all occurrences of the character, you can use a regular expression with the g (global) flag. e.g console.log (myString.replace(/o/g, "a")); // Hella Warld. 
+
+// console.log (myString.split(" ")); //splits results and converts them to an array. you can split using characters, comma,spaces, e.t.c. Use cases: Used by bank apps to split the name of the user into first name and last name. It can also be used to split a string into an array of characters, words, or sentences. It takes one argument, which is the character to be used as the separator. The separator can be any character, including spaces, commas, and periods. The split() method returns an array of strings. The original string remains unchanged.
+
+// console.log (myString.startsWith ("Hello")); // True. It checks if the string starts with a specific character or string. It takes one argument, which is the character or string to be checked. 
+
+// console.log (myString.endsWith ("World")); // True. It checks if the string ends with a specific character or string. It takes one argument, which is the character or string to be checked.
+
+// console.log (str1.concat(myString)); // HelloHello World/Concat() method: It is used to join two or more strings together. It takes one or more arguments, which are the strings to be joined. The concat() method returns a new string that is the result of joining the strings together. The original strings remain unchanged.
+
+// let str1 = "Hello";
+// let str2 = "World";
+
+// console.log (str1 + str2); // HelloWorld
+
+// console.log (str1.concat(" ", myString)); // Hello Hello World
 
 
 
+// // // NUMBER METHODS- .toString(), .toFixed(), .toPrecision(), .toExponential(), .toLocaleString(), .parseInt(), .parseFloat(), .isNaN(), .isInteger(), .isFinite(), .isSafeInteger()
+// let num = 42.678;
+// console.log (num); // 42.678
+
+// console.log (num.toString()); // "42.678", this will convert the number to a string.
+
+// console.log (num.toFixed(2)); // 42.68, this will convert the number to a string with 2 decimal places. The toFixed() method rounds the number to the specified number of decimal places and returns a string.
+
+// console.log (parseInt(num)); // 42, this will convert the number to an integer. The parseInt() method ignores any decimal places and returns only the integer part of the number. If the string cannot be converted to an integer, it returns NaN (Not a Number). Integers are whole numbers from 0-9.
+
+// console.log (parseFloat(num)); // 42.678, this will convert the number to a float. The parseFloat() method returns the number as a floating-point number. If the string cannot be converted to a float, it returns NaN (Not a Number). Floats are numbers with decimal places.
+
+// // isNaN checks if the value is NaN (Not a Number). It returns true if the value is NaN and false if it is not NaN.
+// console.log (isNaN("waste")); // true
 
 
+// // // MATHS METHODS - pi, round, floor, ceil, random, max, min, abs, pow, sqrt. They are embedded in the Math object or keyword "Math".
+
+// console.log (Math.PI); // 3.141592653589793, this will display the value of pi.
+
+// console.log (Math.round(4.5)); // 5, this will round the number to the nearest integer. If the decimal part is 0.5 or greater, it rounds up to the next integer. If the decimal part is less than 0.5, it rounds down to the previous integer.
+
+// console.log (Math.round(0.4)); // 0.
+
+// console.log (Math.floor(4.9)); // 4, this will round the number down to the nearest lowest integer. It always rounds down to the previous integer, regardless of the decimal part.
+
+// console.log (Math.ceil(4.1)); // 5, this will round the number up to the nearest highest integer. It always rounds up to the next integer, regardless of the decimal part.
+
+// console.log (Math.max(4, 5, 6, 7)); // 7, this will return the maximum or highest value from the list of numbers. It takes any number of arguments and returns the maximum value.
+
+// console.log (Math.min(4, 5, 6, 7)); // 4, this will return the minimum or lowest value from the list of numbers. It takes any number of arguments and returns the minimum value. 
+
+// console.log (Math.random()); // returns random numbers between 0 and 1. The random number is a floating-point number between 0 and 1, including 0 but excluding 1. It can be used to generate random numbers for games, lotteries, and other applications where random numbers are needed.
+
+// console.log (Math.pow(2, 3)); // 8, this will return the value of 2 raised to the power of 3. The pow() method takes two arguments, the base and the exponent. It returns the result of raising the base to the power of the exponent.
+
+// console.log (Math.sqrt(16)); // 4, this will return the square root of 16. It returns the square root of the number. If the number is negative, it returns NaN (Not a Number). The square root of a number is a value that, when multiplied by itself, gives the original number. For example, the square root of 16 is 4 because 4 * 4 = 16.
+
+
+// console.log (Math.floor (Math.random () * 100)); // 0-99, this will generate a random number between 0 and 99. The random number is a floating-point number between 0 and 1, including 0 but excluding 1. It can be used to generate random numbers for things like OTP generation, you can also use Math.ceil
+
+// // // OBJECTS - dot operators
+// let student ={
+//     name: "John Doe",
+//     age: 45,
+//     email: "johndoe@gmail.com",
+//     isHappy: true,
+// }
+
+// console.log (student); // {name: "John Doe", age: 45, email: "johndoe@gmail.com"}
+// console.log (student.name); // John Doe.
+// console.log (Object.keys(student)); // ["name", "age", "email", "isHappy"]
+// console.log (Object.values(student)); // ["John Doe", 45, "johndoe@gmail.com", true]
+
+
+
+// // FUNCTIONS
+// // Functions are reusable blocks of code that perform a specific task. They are used to organize code into smaller, manageable pieces. i.e It is a block of code that provides answers to a specific problem and it can also be used for other purposes within the code.
+
+//Function Declaration and Function Expression
+// //Function Declaration: A function declaration is a named function that is defined using the function keyword. It can be called before it is declared in the code. It is hoisted to the top of the code, which means it can be called before it is declared.
+
+// // For example:
+// function myName(argumentOrParameter) {
+//     console.log (argumentOrParameter);
+//     return argumentOrParameter;
+//     console.log (argumentOrParameter);
+// } // argumentOrParameter is the parameter of the function. 
+
+// // Write a simple function that allows a user to enter their name and displays it in the console.
+
+// function myName(name) {
+//     console.log (name);
+//     return name;
+// }
+
+// myName("Samuel"); // Samuel
+// myName("Mary"); // Mary 
+// myName("John"); // John
+// myName("Keziah"); // Keziah
+// myName("Alice"); // Alice
+
+
+// //Write a function that adds two numbers together and returns the result. 
+// function addNum(a, b) {
+//     console.log (a + b);
+// }
+
+// addNum(3, 9); // 12
+// addNum(10, 20); // 30
+// addNum(100, 4); // 104
+
+
+// // DAY 6- 15/05/2025 - FUNCTIONS BY MR IFE
+// There are 3 ways to declare a function in JavaScript:
+// function declaration (using the "function()" keyword), function expression (using the "function" keyword and assigning it to a variable), and arrow function (using the arrow syntax =>).
+// function greet (name) {
+//     console .log (`Hello ${name}, welcome to the system`);
+// }
+// // N/B: name is the parameter, greet is the function name. 
+// greet ("Samuel"); // Hello Samuel, welcome to the system
+// greet ("Mary"); // Hello Mary, welcome to the system
+// greet ("John");
+// greet ("Keziah");
+// greet ("Alice");
+// // Differences Between a parameter and an argument:
+// // Parameter is a placeholder for the argument that will be passed to the function when it is called. Parameter doesn't change, argument changes. Passing an argument is used when invoking the function
+
+// // # Function Declaration
+// function greet (name, gender, score) {
+//     let name1 = name;
+//     console.log ("Hello, world!", name, gender, score)
+// }
+
+
+// greet ("Samuel", "male", 90); //
+// greet ("Mary", "female", 85);
+// greet ("John", "male", 75);
+// greet ("Keziah", "female", 95);
+// greet ("Alice", "female", 88);
+
+
+// //Difference between return and console.log:
+// // console.log: It is used to display the output of a function or a block of code. It does not return any value. It is used for debugging purposes and to display the output of a function or a block of code while retrn is used to return a value from a function. 
+
+// function sumOf3Numbers (a, b, c) {
+//     let sum = a + b + c;
+//     console.log (sum); // 15
+//     return sum; // 15
+
+// } 
+// sumOf3Numbers (5, 10, 15); // 30
+// greet ("Samuel", "male", 90); 
+
+// //Create a function that takes a number from a user 
+// function getInput() {
+//    prompt ("Enter a number: ");
+// }
+
+// getInput();
+
+
+// //Create a function that subtraacts two numbers
+// function subtractNumbers (a,b) {
+//     let num2 = a - b;
+//     console.log (a - b);
+//     return num2;
+// }
+
+// //Create a function that takes input from a user and checks if the number is greater than 6.
+
+// function checkUserNumber() {
+//     let userNumber = parseInt (prompt ("Enter a number:"));
+//     if (userNumber > 6) {
+//         console.log ("This number is greater than 6");
+//     }
+//     else if (userNumber < 6) {
+//         console.log ("This number is less than 6");
+//     }
+//     else {
+//         console.log ("The number is equal to 6");
+//     }
+// }
+// checkUserNumber(); // This will display the message based on the number entered by the user.
+
+
+// // N/B: Functions helps us automate tasks and make our code more readable and maintainable. 
+
+// // Create a functions that takes user names and returns the length or nmber of the characters in the name.
+// let lengthOfCharacters = function () {
+//     let userName = prompt ("Enter your name: ");
+//     console.log ("The length of your name is: " + userName.length + " characters");
+// }
+// lengthOfCharacters();
+
+// // Create a function that takes 4 parameters (numbers) and returns the highest number.
+// prompt("Enter your Number");
+// let checkHighestNumber= function  () {
+//     let a = parseInt (prompt ("Enter the first number: "));
+//     let b = parseInt (prompt ("Enter the second number: "));
+//     let c = parseInt (prompt ("Enter the third number: "));
+//     let d = parseInt (prompt ("Enter the fourth number: "));
+
+//     let highestNum = Math.max (a, b, c, d);
+//     console.log ("The highest number is: " + highestNum);
+//     return highestNum;
+// }
+// checkHighestNumber();
+
+
+// //Create a function that takes an input from a user and checks if the number is even or odd.
+// let checkEvenOrOdd = function () {
+//     let userNum = parseInt (prompt ("Enter a number: "));
+//     if (userNum % 2 === 0) {
+//         console.log ("This number is even");
+//     }
+//     else if (userNum % 2 !== 0) {
+//         console.log ("This number is odd");
+//     }
+//     else {
+//         console.log ("Please enter a valid number");
+//     }
+// }
+
+// checkEvenOrOdd();
+
+// //ARROW FUNCTIONS () => {}
+// // Arrow functions are a shorthand way of writing functions in JavaScript. They are more concise and easier to read than regular functions. They are also lexically bound, which means they do not have their own this value. This makes them useful for writing callbacks and event handlers.
+
+// const greetMe = (name) => {
+//     console.log (`Hello ${name}, welcome to the system`);
+// } 
+
+// greetMe("User");
+
+// let checkEvenOrOdd = () => {
+//     let userNum = parseInt(prompt("Enter a number: "));
+//     if (userNum % 2 === 0) {
+//         console.log("This number is even");
+//     } else if (userNum % 2 !== 0) {
+//         console.log("This number is odd");
+//     } else {
+//         console.log("Please enter a valid number");
+//     }
+// };
+// checkEvenOrOdd();
+// It is similar to function expression but it doesnt use the function keyword. Arrow functions are more concise and easier to read than regular functions. They are also lexically bound, which means they do not have their own this value. This makes them useful for writing callbacks and event handlers.
+
+// Create an arrow function that checks the length of user input
+let checkLength = () => {
+    let userInput = prompt ("Enter am input:");
+    console.log ("The length of your input is: " + userInput.length + " characters");
+    alert("The length of your input is: " + userInput.length + " characters");
+}
+checkLength();
+
+// JAVASCRIPT HOISTING
+//Js takes the variables, assigns values to them and hoists them to the top of the code. It does not hoist the values, it only hoists the variables. This means that you can use a variable before it is declared in the code. However, this is not a good practice and should be avoided.  Js goes through the code twice, firstly it hoists them to the top without assigning values to them, but the second time, it will assign a value to it. It is better to declare variables at the top of the code to avoid confusion and make the code more readable.
 
 // EXERCISES
 // //1.
@@ -689,16 +965,24 @@
 // }
 
 // //10. Write a program that checks if a number is even or odd.
-const checkNum = parseInt (prompt ("Enter a number: "));
-if (isNaN(checkNum) || (checkNum < 0)) {
-    alert ("Invalid Input. Please enter a positive number");
-}
-else{
-    const inputNum = (checkNum % 2 === 0) 
-    ? `${checkNum} is definitely an even number` 
-    : `${checkNum} is definitely an odd number`; 
-    alert(inputNum);
-}
+// const checkNum = parseInt (prompt ("Enter a number: "));
+// if (isNaN(checkNum) || (checkNum < 0)) {
+//     alert ("Invalid Input. Please enter a positive number");
+// }
+// else{
+//     const inputNum = (checkNum % 2 === 0);
+//     ? `${checkNum} is definitely an even number` 
+//     : `${checkNum} is definitely an odd number`; 
+//     alert(inputNum);
+// }
+
+
+//Write an article on hoisting and scoping in JavaScript, the types(global,function and block). hoisting in terms of function and variables, where let is stored, what happens when javascript sees variables and funtions. Not less than 300 words. Create an account on medium and publish it there.
+//Title: JavaScript Hoisting and Scoping For Beginners
+
+
+
+
 
 
 
