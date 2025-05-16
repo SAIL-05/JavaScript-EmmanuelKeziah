@@ -1,4 +1,4 @@
-// // // // 28/04/2025- JAVASCRIPT DAY 1  BY MR SAMUEL// // // //
+// // // // // 28/04/2025- JAVASCRIPT DAY 1  BY MR SAMUEL// // // //
 // // This is a primitive Datatype
 // // String, Number, Boolean, Null, Undefined, Symbol, BigInt
 
