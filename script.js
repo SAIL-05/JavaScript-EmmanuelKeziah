@@ -697,16 +697,92 @@
 // checkEvenOrOdd();
 // It is similar to function expression but it doesnt use the function keyword. Arrow functions are more concise and easier to read than regular functions. They are also lexically bound, which means they do not have their own this value. This makes them useful for writing callbacks and event handlers.
 
-// Create an arrow function that checks the length of user input
-let checkLength = () => {
-    let userInput = prompt ("Enter am input:");
-    console.log ("The length of your input is: " + userInput.length + " characters");
-    alert("The length of your input is: " + userInput.length + " characters");
-}
-checkLength();
+// // Create an arrow function that checks the length of user input
+// let checkLength = () => {
+//     let userInput = prompt ("Enter am input:");
+//     console.log ("The length of your input is: " + userInput.length + " characters");
+//     alert("The length of your input is: " + userInput.length + " characters");
+// }
+// checkLength();
 
-// JAVASCRIPT HOISTING
-//Js takes the variables, assigns values to them and hoists them to the top of the code. It does not hoist the values, it only hoists the variables. This means that you can use a variable before it is declared in the code. However, this is not a good practice and should be avoided.  Js goes through the code twice, firstly it hoists them to the top without assigning values to them, but the second time, it will assign a value to it. It is better to declare variables at the top of the code to avoid confusion and make the code more readable.
+
+
+// // // 19/05/2025=> LOOPS BY MR SAMUEL // // //
+
+
+
+// // CLASS ACTIVITIES
+// // 1. Write an arrow function program that divides two numbers
+// let divide = (firstNumber, secondNumber) => {
+//     return divide = firstNumber / secondNumber;
+// }
+// console.log (divide(10, 50));
+
+
+// // Write a function that checks if a number is even or odd:
+// let number = parseInt(prompt("Enter any Number:"));
+// let evenOrOdd = (number) => {
+//     if (number % 2 === 0) {
+//         alert(`${number} is an even number`);
+//     } else if (number % 2 !== 0) {
+//         alert(`${number} is an odd number`);
+//     }
+//     else if (isNaN(number)) {
+//         alert (`${number} is not a number. Please enter a valid number`);
+//     }
+// };
+// evenOrOdd(number);
+
+// let allNum = function(num1, num2, num3) {
+//     let maxNum = Math.max(num1, num2, num3);
+//     let minNum= Math.min(num1, num2, num3);
+//     alert(`The largest number is: ${maxNum} and the smallest number is: ${minNum}`);
+//     return maxNum;
+//     return minNum;
+// };
+// console.log(allNum(10, 20, 30));
+
+// OR
+// let checkEvenOrOdd = function(a) {
+//     if (a % 2 === 0) {
+//         alert(`${a} is an even number`);
+//     }
+//     else if (a % 2 !== 0) {
+//         alert (`${a} is an odd number`);
+//     }
+//     else {
+//         alert (`Please enter a valid input`);
+//     }
+// }
+// a = parseInt(prompt("Enter your Number: "))
+// (checkEvenOrOdd(a));
+
+//OR
+// This is not correct
+// let a = prompt ("Enter first Number: ");
+// let b = prompt ("Enter the second number: ");
+// let c = prompt ("Enter the third number: ") 
+// let greatNumber=function(a, b, c) {
+//     let maxNum = Math.max(a, b, c);
+//     let minNum= Math.min(a, b, c);
+//     alert(`The largest number is: ${maxNum} and the smallest number is: ${minNum}`);
+//     return { maxNum, minNum };
+// };
+// console.log(greatNumber);
+
+//Write a function that reverses a string
+function stringReverse(atm) {
+    return atm.split("").reverse().join("");
+}
+console.log(stringReverse("example"));
+console.log(stringReverse("HELLO"));
+
+// //Find the function that returns the longest word in a sentence
+// // To get the longest Word, know the number of each word in that sentence, split with space then  use the length.array. The word with the highest length is the longest word.
+// let sentence = prompt ("Enter a sentence: ")
+// let longestWord = (sentence)=>{
+
+// }
 
 // EXERCISES
 // //1.
@@ -980,6 +1056,8 @@ checkLength();
 //Write an article on hoisting and scoping in JavaScript, the types(global,function and block). hoisting in terms of function and variables, where let is stored, what happens when javascript sees variables and funtions. Not less than 300 words. Create an account on medium and publish it there.
 //Title: JavaScript Hoisting and Scoping For Beginners
 
+// JAVASCRIPT HOISTING
+//Js takes the variables, assigns values to them and hoists them to the top of the code. It does not hoist the values, it only hoists the variables. This means that you can use a variable before it is declared in the code. However, this is not a good practice and should be avoided.  Js goes through the code twice, firstly it hoists them to the top without assigning values to them, but the second time, it will assign a value to it. It is better to declare variables at the top of the code to avoid confusion and make the code more readable.
 
 
 
