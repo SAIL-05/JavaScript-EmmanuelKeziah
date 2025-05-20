@@ -707,10 +707,7 @@
 
 
 
-// // // 19/05/2025=> LOOPS BY MR SAMUEL // // //
-
-
-
+// // // 19/05/2025=> FUNCTION TASKS BY MR SAMUEL // // //
 // // CLASS ACTIVITIES
 // // 1. Write an arrow function program that divides two numbers
 // let divide = (firstNumber, secondNumber) => {
@@ -781,8 +778,64 @@ console.log(stringReverse("HELLO"));
 // // To get the longest Word, know the number of each word in that sentence, split with space then  use the length.array. The word with the highest length is the longest word.
 // let sentence = prompt ("Enter a sentence: ")
 // let longestWord = (sentence)=>{
+// }
+
+
+// 20/5/2025- LOOPS BY MR IFE
+// //Every "for" loop takes 3 parameters: initializer, conditional, increment or decrement.
+//We write for loops by using the for keyword and adding the 3 parameters
+// function greetMe(parameter){
 
 // }
+
+// greetMe ('argument')
+// for(initializer, conditional, increment){
+
+// }
+// if( i < 10 )
+
+// for ( let i = 0; i < 10; i++){
+//     console.log ("This is  the value of i", i);
+// }
+// console.log ("We are learning loops");
+
+//initializer: creating and assigning values e.g i=0
+
+
+// // Create a loop that checks if you have gotten to an odd number
+
+// for (let startIndex = 1; startIndex < 50; startIndex++){
+//     if (startIndex % 2 === 0){
+//         console.log (startIndex, 'is an even number');
+//     }
+//     else {
+//         console.log (startIndex, 'is an even number');
+//     }
+// }
+
+// for (let startIndex = 1; startIndex < 50; startIndex += 2){
+//     if (startIndex % 2 === 0){
+//         console.log (`${startIndex} is an even number`);
+//     }
+//     else {
+//         console.log (`${startIndex} is an odd number`);
+//     }
+// }
+//The "+=2 adds 2 values to it"
+
+// // Create a for loop, let the start value be 5, but less than or equal to 20;
+
+for (let startValue = 5; startValue <= 20; startValue++){
+    console.log (`the value is ${startValue}`)
+}
+
+// Create an array called scores, give it any 10 numbers. loop through the array values and print the value in the console
+let scores= [1, 90, 3,95, 44, 2, 1, 54, 65, 37];
+for (let i =0; i < 10; i++){
+    console.log (`The final score is ${scores[i]}`);
+}
+
+//Research about basic variable declararation.
 
 // EXERCISES
 // //1.
