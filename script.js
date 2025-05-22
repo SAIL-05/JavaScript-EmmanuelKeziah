@@ -767,12 +767,12 @@
 // };
 // console.log(greatNumber);
 
-//Write a function that reverses a string
-function stringReverse(atm) {
-    return atm.split("").reverse().join("");
-}
-console.log(stringReverse("example"));
-console.log(stringReverse("HELLO"));
+// //Write a function that reverses a string
+// function stringReverse(atm) {
+//     return atm.split("").reverse().join("");
+// }
+// console.log(stringReverse("example"));
+// console.log(stringReverse("HELLO"));
 
 // //Find the function that returns the longest word in a sentence
 // // To get the longest Word, know the number of each word in that sentence, split with space then  use the length.array. The word with the highest length is the longest word.
@@ -825,17 +825,59 @@ console.log(stringReverse("HELLO"));
 
 // // Create a for loop, let the start value be 5, but less than or equal to 20;
 
-for (let startValue = 5; startValue <= 20; startValue++){
-    console.log (`the value is ${startValue}`)
-}
+// for (let startValue = 5; startValue <= 20; startValue++){
+//     console.log (`the value is ${startValue}`)
+// }
 
-// Create an array called scores, give it any 10 numbers. loop through the array values and print the value in the console
-let scores= [1, 90, 3,95, 44, 2, 1, 54, 65, 37];
-for (let i =0; i < 10; i++){
-    console.log (`The final score is ${scores[i]}`);
-}
+// // Create an array called scores, give it any 10 numbers. loop through the array values and print the value in the console
+// let scores= [1, 90, 3,95, 44, 2, 1, 54, 65, 37];
+// for (let i =0; i < 10; i++){
+//     console.log (`The final score is ${scores[i]}`);
+// }
+//ASSIGNMENT
+//Research about basic variable declaration.
 
-//Research about basic variable declararation.
+
+// // 22/05/2025  DOM BY MR IFE// // //
+//Write a for loop that prints 1 to 50
+// for(let i=1; i <= 50; i++){
+//     console.log("This is the value of i:", i)
+// }
+
+// // DOM (Document Object Model) Manipulation: Every element added to the webpage are treated as objects or branches. DOM is an object representation of a webpage.
+
+//WINDOW VS DOCUMENT
+// The window is like the top level of the DOM tree. It is the entire tab(top to bottom), while the document is the content of the webpage. 
+
+//getElementByClassName: This method helps us access elements by their class name. To use this method, we use: 
+// document.getElementsByClassName("box")
+
+//There are 4 main ways to target elements in JavaScript: i. getElementById, ii. getElementsByClassName, iii. document.querySelector, iv. document.querySelectorAll.
+
+// //getElementByClassName allows js to pick every element with the same class name while getElementById allows js to pick only one element with the same id. The id is unique to each element, while the class name can be used by multiple elements.
+
+//document.querySelector will return only the first element that matches the selector. It is used to select elements using CSS selectors. 
+//querySelectorAll will pick every instance of the element with the same class name. It is used to select multiple elements with the same class name using CSS selectors.
+
+//textContent, innerHTML and innerText are used in JavaScript to manipulate, pick or change the content of HTML elements. textContent is used to get or set the text content of an element. innerHTML is used to get or set the HTML content of an element. innerText is used to get or set the text content of an element, but it does not include HTML tags.
+
+
+
+//Create an object called "student" with the following properties(keys): name, age, email, and isHappy. Use the object to display the student's information in the console.
+
+// let student = {
+//     name: "David",
+//     age: 25,
+//     email: "david@example.com",
+//     isHappy: true
+// };
+// console.log(student.name); // David
+
+// console.log (window.document.querySelectorAll("li").innerText); // This will display the text content of all the li elements in the document. 
+// console.log (window.document.querySelector('li')[2].innerText); // This will target the third li element in the document and display its text content. 
+
+
+
 
 // EXERCISES
 // //1.
@@ -846,7 +888,7 @@ for (let i =0; i < 10; i++){
 // console.log (typeof (userNum)); 
 
 // if (userNum === 0) {
-//     alert ("Zero is not a lucky number");
+//     alert ("Zero is not a lucky number");    
 // }
 // else if  (userNum > 0) {
 //     alert (`Your lucky number is ${userNum}`);
